@@ -24,8 +24,8 @@ const Notes = () => {
 
   const breakpoint = {
     default: 3,
-    1100: 3,
-    700: 2,
+    1100: 2,
+    700: 1,
   };
 
   return (
