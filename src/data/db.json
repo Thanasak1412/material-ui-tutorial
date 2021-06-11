@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "title": "Yoshi's birthday bash",
+      "details": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, incidunt ullam? Ipsa quia placeat odit tempore veritatis vero optio quasi atque dicta saepe? Alias dicta laboriosam optio eaque tenetur perferendis?",
+      "category": "reminders",
+      "id": 1
+    },
+    {
+      "title": "Complete my ninja training",
+      "details": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta obcaecati vel ipsum vitae quam earum officiis pariatur consequuntur sapiente ipsa quis suscipit iure atque voluptate placeat, magnam molestias in inventore! Blanditiis, culpa voluptatem. Officiis nobis possimus consequatur doloribus ullam, fuga laborum quibusdam illo esse animi dicta provident minus nemo voluptas non doloremque recusandae placeat debitis sed? Animi culpa facilis voluptatem!",
+      "category": "work",
+      "id": 2
+    },
+    {
+      "title": "Order a pizza!",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima facere quos, accusamus asperiores sunt fugiat. Repellat nostrum molestiae vitae provident harum! Ad, perspiciatis deserunt commodi placeat neque eveniet blanditiis.",
+      "category": "todo",
+      "id": 3
+    },
+    {
+      "title": "My birthday",
+      "details": "bah bah bah .....",
+      "category": "todo",
+      "id": 4
+    }
+  ]
+}
