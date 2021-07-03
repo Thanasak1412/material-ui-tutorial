@@ -18,3 +18,7 @@
   background: grey;
   margin-bottom: 30px;
 }
+
+.MuiCardContent-root:hover {
+  cursor:default;
+}

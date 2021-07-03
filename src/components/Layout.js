@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   AppBar,
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => {
     appBar: {
       width: `calc(100% - ${drawerWidth}px)`,
       background: "#FFFFFF",
-      color: "#000"
+      color: "#000",
     },
     toolBar: theme.mixins.toolbar,
   };
@@ -79,7 +79,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className={root}>
-      {/* app bar */}
+      {/* App bar */}
       <AppBar className={appBar} elevation={0}>
         <Toolbar>
           <Typography>
@@ -88,15 +88,14 @@ const Layout = ({ children }) => {
         </Toolbar>
       </AppBar>
 
-      {/* side bar */}
-
+      {/* Side bar */}
       <Drawer
         className={drawer}
         variant="permanent"
         anchor="left"
         classes={{ paper: drawerPaper }}
       >
-        <Typography className={typography}>Test Notes</Typography>
+        <Typography className={typography}>To-Do-List</Typography>
         <List>
           {menuItems.map(({ title, icon, path }) => (
             <ListItem

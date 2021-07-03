@@ -101,22 +101,22 @@ const Create = () => {
             }}
           >
             <FormControlLabel
-              value="money"
+              value="Money"
               label="Money"
               control={<Radio color="primary" required={true} />}
             />
             <FormControlLabel
-              value="todo"
+              value="Todo"
               label="Todo"
               control={<Radio color="primary" required={true} />}
             />
             <FormControlLabel
-              value="reminders"
+              value="Reminders"
               label="Reminders"
               control={<Radio color="primary" required={true} />}
             />
             <FormControlLabel
-              value="work"
+              value="Work"
               label="Work"
               control={<Radio color="primary" required={true} />}
             />

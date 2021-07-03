@@ -6,20 +6,36 @@ import NoteCard from "../components/NoteCard";
 
 const Notes = () => {
   const [notes, setNotes] = useState([]);
+  const HOST_API = "http://localhost:8000/notes/";
 
   useEffect(() => {
-    fetch("http://localhost:8000/notes")
+    fetch(HOST_API)
       .then((res) => res.json())
       .then((data) => setNotes(data));
-  }, []);
+  }, [notes]);
 
   const onDelete = async (id) => {
-    fetch(`http://localhost:8000/notes/${id}`, {
+    fetch(`${HOST_API}${id}`, {
       method: "DELETE",
     });
 
     const newNotes = await notes.filter((note) => note.id !== id);
     setNotes(newNotes);
+  };
+
+  const onUpdate = (id, title, details, category) => {
+    fetch(`${HOST_API}${id}`, {
+      method: "PATCH",
+      body: JSON.stringify({
+        title,
+        details,
+        category,
+        completed: true,
+      }),
+      headers: { "Content-Type": "application/json; charset=UTF-8" },
+    })
+      .then((res) => res.json())
+      .then((json) => console.log(json));
   };
 
   const breakpoint = {
@@ -44,6 +60,7 @@ const Notes = () => {
                 details={details}
                 category={category}
                 onDelete={onDelete}
+                onUpdate={onUpdate}
               />
             </div>
           );
